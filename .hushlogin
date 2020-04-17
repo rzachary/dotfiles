@@ -1,0 +1,5 @@
+# This file disables the system copyright notics, the date and time of the 
+# last login, the message of the day as well as other informatiion that may
+# appear on the login screen.
+# If you need help I looked in 'man login'
+

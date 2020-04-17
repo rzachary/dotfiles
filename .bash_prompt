@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+#If I wanted to make changes beyond the default OH MY Zsh Theme I am using.
+# ButI like the Theme so no bueno
+
+#If I made changes I would add this back to the loop that loads the tiles in bash_profile
