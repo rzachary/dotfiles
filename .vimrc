@@ -10,7 +10,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 Plugin 'styled-components/vim-styled-components'
 Plugin 'mattn/emmet-vim'
 Plugin 'ervandew/supertab'
-Plugin 'valloric/youcompleteme'
 Plugin 'luochen1990/rainbow'
 let g:rainbow_active = 1 "0
 let mapleader = ","
@@ -95,7 +94,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 " ========== colorschemes
 Plugin 'flazz/vim-colorschemes'
 Plugin 'cakebaker/scss-syntax.vim'
-Plugin 'craigemery/vim-autotag'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'michaeljsmith/vim-indent-object'
 
@@ -207,10 +205,6 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-
-
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 " ============= extra settings
 syntax on
@@ -325,7 +319,6 @@ Plugin 'vim-scripts/indentpython.vim'
 "auto-completion stuff
 "Plugin 'klen/python-mode'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'klen/rope-vim'
 "Plugin 'davidhalter/jedi-vim'
 ""code folding
 Plugin 'tmhedberg/SimpylFold'
@@ -403,3 +396,7 @@ nnoremap <space> za
 
 "js stuff"
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+

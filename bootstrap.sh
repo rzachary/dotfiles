@@ -15,6 +15,7 @@ function doIt() {
 		--exclude "zsh/" \
 		--exclude "brew.sh" \
 		--exclude "update.sh" \
+		--exclude "vim.sh" \
 		--exclude ".zshrc" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;

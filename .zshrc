@@ -4,6 +4,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Directories to be prepended to $PATH
 declare -a dirs_to_prepend
 dirs_to_prepend=(
+  "/usr/local/share/"
   "/usr/bin"
   "/usr/local/sbin"
   "/usr/local/git/bin"
@@ -20,6 +21,9 @@ dirs_to_prepend=(
 
 # Explicitly configured $PATH
 PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+# To correct a potential issue with python3, it causes a problem with zsh
+PATH=/usr/local/share/python:$PATH
 
 export PATH
 
