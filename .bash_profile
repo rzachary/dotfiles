@@ -45,5 +45,12 @@ fi;
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults;
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/rzachary/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/rzachary/tools/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/rzachary/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rzachary/tools/google-cloud-sdk/completion.zsh.inc'; fi
+e
+
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
