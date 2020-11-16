@@ -55,6 +55,12 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 I actually run a number of Git/GitHub/GitLab accounts so I generally set these in the global configuraiton file and use SSH keys to connect to the numerous Git repositories that I maintain and contribute to
 
+### Scripts
+
+I recently have found a few time saving commands that are a little bigger than my functions, so i moved them out and put them into a scrpits folder. I then smylink the scripts file to the bin or add it to the path. This way I can eecute these wonderful scripts.
+
+~/scripts
+
 
 ### Sensible macOS defaults
 
@@ -63,6 +69,13 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ```bash
 ./.macos
 ```
+### Lynx
+
+I have switched over to Lynx for my in terminal browser, people ask why do you have an in terminal browser? Looking up Python and Go Language specifications without having to leave the terminal windows is the best, and Lynx lets me dow it.
+
+The configuration and setup is here in my dotfiles.
+
+./lynx
 
 ### Install Homebrew formulae
 
@@ -84,3 +97,8 @@ I mostly use MacOSX so when I am setting things up and installing my setup, I no
 * [Mathias Bynens](https://github.com/mathiasbynens/dotfiles), I borrowed my base configuration from him and made a ton of tweaks. If you want a more vanilla, non language specific set of dotfiles, especially in Vim I would start from here.
 
 * [Jeremy Johnson](https://github.com/j1z0/vim-config), Vim Config, but specifically the python stuff. I write a lot of python code so I need VIM to be streamlined for some things
+
+## TODOS
+[]] Porting over some more custom scripts
+[] Figuring out how to skip songs on the cmdline for youtube music, i think spotify would be easy but the YTMD app will be a little harder.
+[] WeeChat integration for slack, discord, and twitter (trying to push as much stuff to the terminal as possible)
