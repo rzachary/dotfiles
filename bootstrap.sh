@@ -12,6 +12,7 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		--exclude "iterm/" \
+		--exclude "scipts/" \
 		--exclude "zsh/" \
 		--exclude "brew.sh" \
 		--exclude "update.sh" \

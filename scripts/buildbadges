@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Websites for build system badges
+url="$1"
+

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# The option to pass in is the Region or locale
+curl https://corona-stats.online/$1

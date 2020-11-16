@@ -118,7 +118,6 @@ brew cask install java
 
 
 # Install Applications
-brew cask install atom
 brew cask install dash
 brew cask install evernote
 brew cask install flux
@@ -129,7 +128,6 @@ brew cask install iterm2
 brew cask install slack
 brew cask install sublime-text
 brew cask install transmit
-brew cask install visual-studio-code
 brew cask install vlc
 brew cask install chromium
 

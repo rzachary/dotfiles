@@ -53,7 +53,7 @@ GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-I actually run a number of Git/GitHub/GitLab accounts so I generally set these in teh global configuraiton file and use SSH keys to connect to the numerous Git repositories that I maintain and contribute to
+I actually run a number of Git/GitHub/GitLab accounts so I generally set these in the global configuraiton file and use SSH keys to connect to the numerous Git repositories that I maintain and contribute to
 
 
 ### Sensible macOS defaults
@@ -67,7 +67,6 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 ### Install Homebrew formulae
 
 I mostly use MacOSX so when I am setting things up and installing my setup, I normally use [Homebrew](https://brew.sh/) to automate the install, I have a file that has all the formulae for the install (after installing Homebrew, off the top):
-
 ```bash
 ./brew.sh
 ```
@@ -85,4 +84,3 @@ I mostly use MacOSX so when I am setting things up and installing my setup, I no
 * [Mathias Bynens](https://github.com/mathiasbynens/dotfiles), I borrowed my base configuration from him and made a ton of tweaks. If you want a more vanilla, non language specific set of dotfiles, especially in Vim I would start from here.
 
 * [Jeremy Johnson](https://github.com/j1z0/vim-config), Vim Config, but specifically the python stuff. I write a lot of python code so I need VIM to be streamlined for some things
-

@@ -184,4 +184,6 @@ function whois() {
 }
 
 #create a new project depending on parameters
-
+function createproject(){
+	echo "$1"
+}
