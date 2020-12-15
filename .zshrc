@@ -1,3 +1,6 @@
+# If you come from bash you will probably have to change the path for sure.
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -36,6 +39,9 @@ ZSH_THEME="agnoster"
 # Z beats cd most of the time
 # . ~/z/z.sh
 
+# https://apple.stackexchange.com/questions/381836/zsh-brew-and-oh-my-zsh-insecure-completion-dependent-directories-detected-as
+ZSH_DISABLE_COMPFIX="true"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -63,19 +69,19 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(fabric brew node npm history git-flow vagrant zsh-syntax-highlighting)
+plugins=(git)
 
 # User configuration
 
 # Load the shell dotfiles
-# for file in $HOME/.{shell_exports,shell_aliases,shell_functions,shell_config}; do
-#  [ -r "$file" ] && [ -f "$file" ] && source "$file";
-# done;
-# unset file;
+for file in $HOME/.{shell_exports,shell_aliases,shell_functions,shell_config}; do
+ [ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
 
-# if [ -f `brew --prefix`/etc/bash_completion ]; then
-#   . `brew --prefix`/etc/bash_completion
-# fi
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
 
 # Automatically list directory contents on `cd`.
 # auto-ls () {

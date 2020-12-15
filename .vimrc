@@ -3,11 +3,12 @@ runtime macros/matchit.vim
     filetype indent plugin on
 set is
 set encoding=utf-8
+set t_Co=256
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 let g:ackprg = 'ag --nogroup --nocolor --column'
 " ========== autocomplete
-Plugin 'styled-components/vim-styled-components'
+" Plugin 'styled-components/vim-styled-components'
 Plugin 'mattn/emmet-vim'
 Plugin 'ervandew/supertab'
 Plugin 'luochen1990/rainbow'
@@ -306,7 +307,7 @@ set backupskip=/tmp/*,/private/tmp/*
 
 "html
 "  isnowfy only compatible with python not python3
-Plugin 'isnowfy/python-vim-instant-markdown'
+" Plugin 'isnowfy/python-vim-instant-markdown'
 Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'nelstrom/vim-markdown-preview'
@@ -318,9 +319,9 @@ Plugin 'vim-scripts/indentpython.vim'
 
 "auto-completion stuff
 "Plugin 'klen/python-mode'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 "Plugin 'davidhalter/jedi-vim'
-""code folding
+":code folding
 Plugin 'tmhedberg/SimpylFold'
 
 "Colors!!!

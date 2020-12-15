@@ -1,4 +1,8 @@
 # Add `~/bin` to the `$PATH`
+# export PATH=$PATH:/Users/rzachary/tootls/google-cloud-sdk/
+# export PATH=/usr/local/opt/python@3.8/bin/:$PATH
+# export PATH=/usr/local/opt/ruby/bin/:$PATH
+# export PATH=/usr/local/share/python:$PATH
 export PATH="$PATH:/usr/local/bin/"
 
 
@@ -11,26 +15,26 @@ done;
 unset file;
 
 # Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
+# shopt -s nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
-shopt -s histappend;
+# shopt -s histappend;
 
 # Autocorrect typos in path names when using `cd`
-shopt -s cdspell;
+# shopt -s cdspell;
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
 # * Recursive globbing, e.g. `echo **/*.txt`
-for option in autocd globstar; do
-	shopt -s "$option" 2> /dev/null;
-done;
+#for option in autocd globstar; do
+#	shopt -s "$option" 2> /dev/null;
+#done;
 
 # Add tab completion for many Bash commands
 if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-	source "$(brew --prefix)/share/bash-completion/bash_completion";
+ source "$(brew --prefix)/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
+ source /etc/bash_completion;
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
@@ -50,7 +54,6 @@ if [ -f '/Users/rzachary/tools/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/rzachary/tools/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/rzachary/tools/google-cloud-sdk/completion.zsh.inc'; fi
-e
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;

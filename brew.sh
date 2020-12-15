@@ -27,7 +27,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install Bash 4.
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
@@ -37,30 +37,23 @@ brew install zsh
 brew install zsh-syntax-highlighting
 
 
+# Install some more Lanaguages - probably need to add in Ruby, Elixr, and a couple of other languages
+brew install go
+brew install python
+
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
+brew install pandoc
 brew install screen
 brew install tmux
-
-# Install AWS cli
-brew install awscli
-
-# Install Azure CLI
-brew install azure-cli
-
-# Install Google SDK when teh time comes
-
-# Install some more Lanaguages - probably need to add in Ruby, Elixr, and a coupl eof other languages
-brew install go
-brew install python
 
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
@@ -94,6 +87,7 @@ brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
+brew install graphviz
 brew install imagemagick --with-webp
 brew install lua
 brew install lynx
@@ -116,20 +110,42 @@ brew tap caskroom/versions
 # version of java so I will probably need to update this in the future
 brew cask install java
 
-
 # Install Applications
+brew cask install 1password
+brew cask install alfred
+brew cask install bartender
+brew cask install chromium
 brew cask install dash
 brew cask install evernote
 brew cask install flux
 brew cask install firefox
-brew cask install firefoxnightly
-brew cask install google-chrome-canary
+brew cask install insomnia
+brew cask install insomnia-designer
 brew cask install iterm2
-brew cask install slack
+brew cask install macdown
+brew cask install microsoft-word
+brew cask install microsoft-excel
+brew cask install microsoft-powerpoint
+brew cask install postman
+brew cask install proxyman
+brew cask install skitch
+brew cask install spectacle
 brew cask install sublime-text
+brew cask install tableplus
 brew cask install transmit
 brew cask install vlc
-brew cask install chromium
+
+# Install Cloud Storage Providers
+brew cask install dropbox
+
+# Install AWS cli
+brew install awscli
+
+# Install Azure CLI
+brew install azure-cli
+
+# Install Google SDK when the time comes
+brew install --cask google-cloud-sdk
 
 #Remove all the stuff and cleanup
 brew cleanup

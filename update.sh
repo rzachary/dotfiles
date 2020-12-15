@@ -6,7 +6,7 @@
 
 # Install Zsh settings
 ln -s ~/Workspace/dotfiles/zsh/themes/agnoster.zsh-theme $HOME/.oh-my-zsh/themes
-
+ln -s ~/Workspace/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
@@ -22,4 +22,4 @@ open "${HOME}/Workspace/dotfiles/iterm/themes/Solarized Dark.itermcolors"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Reload zsh settings
-# source ~/.zshrc
+source ~/.zshrc
