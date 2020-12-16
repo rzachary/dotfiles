@@ -3,8 +3,8 @@ export PATH=$PATH:/Users/rzachary/tootls/google-cloud-sdk/
 # export PATH=/usr/local/opt/python@3.8/bin/:$PATH
 # export PATH=/usr/local/opt/ruby/bin/:$PATH
 # export PATH=/usr/local/share/python:$PATH
-export PATH="$PATH:/usr/local/bin/"
-
+export PATH=/usr/local/bin/:$PATH
+export PATH=~/.local/bin/scripts:~/.local/bin:$PATH
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
