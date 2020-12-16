@@ -39,6 +39,20 @@ ZSH_THEME="agnoster"
 # Z beats cd most of the time
 # . ~/z/z.sh
 
+# Set the zsh options
+
+# Case-insentive globbing (used in pathname expansion) 
+setopt NO_CASE_GLOB
+
+# Append to the Bash history file, rather than overwriting it
+setopt EXTENDED_HISTORY
+
+# Explicitly set a history file
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+
+# Autocorrect typos in path names when using cd
+setopt AUTO_CD
+
 # https://apple.stackexchange.com/questions/381836/zsh-brew-and-oh-my-zsh-insecure-completion-dependent-directories-detected-as
 ZSH_DISABLE_COMPFIX="true"
 

@@ -183,7 +183,9 @@ function whois() {
   /usr/bin/whois -h whois.internic.net $domain | sed '/NOTICE:/q'
 }
 
-#create a new project depending on parameters
+# TODO: Move this to a script will be too much for a lowly function
+
+# Create a new project depending on parameters
 function createproject(){
 	echo "$1"
 }

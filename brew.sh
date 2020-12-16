@@ -126,8 +126,10 @@ brew cask install macdown
 brew cask install microsoft-word
 brew cask install microsoft-excel
 brew cask install microsoft-powerpoint
+brew cask install nordvpn
 brew cask install postman
 brew cask install proxyman
+brew cask install sketch
 brew cask install skitch
 brew cask install spectacle
 brew cask install sublime-text
@@ -137,6 +139,7 @@ brew cask install vlc
 
 # Install Cloud Storage Providers
 brew cask install dropbox
+brew cask install onedrive
 
 # Install AWS cli
 brew install awscli

@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-# export PATH=$PATH:/Users/rzachary/tootls/google-cloud-sdk/
+export PATH=$PATH:/Users/rzachary/tootls/google-cloud-sdk/
 # export PATH=/usr/local/opt/python@3.8/bin/:$PATH
 # export PATH=/usr/local/opt/ruby/bin/:$PATH
 # export PATH=/usr/local/share/python:$PATH
@@ -15,12 +15,15 @@ done;
 unset file;
 
 # Case-insensitive globbing (used in pathname expansion)
+# I moved these over to the .zshrc file because I am using zshell
 # shopt -s nocaseglob;
 
 # Append to the Bash history file, rather than overwriting it
+# I moved these over to the .zshrc file because I am using zshell
 # shopt -s histappend;
 
 # Autocorrect typos in path names when using `cd`
+# I moved these over to the .zshrc file because I am using zshell
 # shopt -s cdspell;
 
 # Enable some Bash 4 features when possible:
