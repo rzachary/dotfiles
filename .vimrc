@@ -35,6 +35,9 @@ let g:UltiSnipsExpandTrigger = "<Tab>"
 let g:UltiSnipsJumpForwardTrigger = "<Tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-Tab>"
 
+" ========== Dash Plugin
+Plugin 'rizzatti/dash.vim'
+
 " ========== ruby plugins
 Plugin 'tpope/vim-dispatch'
 Plugin 'jgdavey/tslime.vim'

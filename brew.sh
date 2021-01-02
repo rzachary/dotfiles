@@ -40,6 +40,11 @@ brew install zsh-syntax-highlighting
 # Install some more Lanaguages - probably need to add in Ruby, Elixr, and a couple of other languages
 brew install go
 brew install python
+brew install clojure/tools/clojure
+brew install elixir
+
+
+brew install protobuf
 
 # Install `wget` with IRI support.
 brew install wget

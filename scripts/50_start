@@ -1,0 +1,6 @@
+#!/bin/sh
+tmux \
+	split-pane -h \;\
+	swap-pane -s 1 -t 2 \;\
+	resizeep - x 50 \;\
+	send -t 2 "clear" Enter
