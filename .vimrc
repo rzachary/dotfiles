@@ -122,6 +122,7 @@ Plugin 'ecomba/vim-ruby-refactoring'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-bundler'
 "========= syntax helpers
+Plugin 'faith/vim-go'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'ap/vim-css-color'
 Plugin 'tpope/vim-commentary'
