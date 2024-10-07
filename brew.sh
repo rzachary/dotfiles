@@ -119,7 +119,7 @@ brew cask install java
 brew cask install 1password
 brew cask install alfred
 brew cask install bartender
-brew cask install chromium
+brew install --cask google-chrome
 brew cask install dash
 brew cask install evernote
 brew cask install flux
